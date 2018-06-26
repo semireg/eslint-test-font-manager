@@ -34,8 +34,5 @@ module.exports = {
         "import"
       ],
     "settings": {
-        "import/resolve": {
-            "paths": ["no/"]
-        }
     },
 };
