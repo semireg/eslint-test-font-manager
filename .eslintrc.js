@@ -28,11 +28,20 @@ module.exports = {
         ],
         "no-console": "off",
         "import/no-unresolved": "error",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "import/extensions": ["error", "ignorePackages"]
     },
     "plugins": [
         "import"
       ],
     "settings": {
-    },
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".node"
+                ]
+            }
+        }
+    }
 };
